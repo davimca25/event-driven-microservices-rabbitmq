@@ -38,7 +38,7 @@ docker compose up -d
 ### 2. Run the Microservices
 You can run both microservices directly from your favorite IDE (like IntelliJ IDEA):
 
-* Run OrderApplication (Starts on port 8080).
+* Run OrderApplication (Starts on port 8081).
 
 * Run ProcessingApplication (Starts on port 8082).
 
@@ -47,7 +47,7 @@ You can run both microservices directly from your favorite IDE (like IntelliJ ID
 ### Testing the Integration
 You can use Insomnia, Postman, or curl to send a POST request to create an order:
 
-* Endpoint: POST http://localhost:8080/orders
+* Endpoint: POST http://localhost:8081/orders
 
 * Body (JSON):
 
