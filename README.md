@@ -51,7 +51,7 @@ Endpoint: POST http://localhost:8080/orders
 
 Body (JSON):
 
-JSON
+```JSON
 {
   "name": "Order Test",
   "items": [
@@ -61,6 +61,8 @@ JSON
     }
   ]
 }
+```
+
 Expected Result:
 
 The order is saved in the order-ms database.
