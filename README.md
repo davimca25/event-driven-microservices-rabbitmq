@@ -44,12 +44,12 @@ You can run both microservices directly from your favorite IDE (like IntelliJ ID
 
 ---
 
- Testing the Integration
+###Testing the Integration
 You can use Insomnia, Postman, or curl to send a POST request to create an order:
 
-Endpoint: POST http://localhost:8080/orders
+**Endpoint: POST http://localhost:8080/orders
 
-Body (JSON):
+**Body (JSON):
 
 ```JSON
 {
