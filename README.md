@@ -23,7 +23,7 @@ A robust implementation of an asynchronous, event-driven microservices architect
 
 ---
 
-## 🛠️ How to Run Locally
+##  How to Run Locally
 
 ### Prerequisites
 * Ensure you have **Docker** and **Docker Compose** installed.
@@ -35,12 +35,14 @@ Open your terminal in the root directory where the `docker-compose.yml` file is 
 docker compose up -d
 ```
 
-2. Run the Microservices
+### 2. Run the Microservices
 You can run both microservices directly from your favorite IDE (like IntelliJ IDEA):
 
 Run OrderApplication (Starts on port 8080).
 
 Run ProcessingApplication (Starts on port 8082).
+
+---
 
  Testing the Integration
 You can use Insomnia, Postman, or curl to send a POST request to create an order:
