@@ -38,9 +38,9 @@ docker compose up -d
 ### 2. Run the Microservices
 You can run both microservices directly from your favorite IDE (like IntelliJ IDEA):
 
-Run OrderApplication (Starts on port 8080).
+* Run OrderApplication (Starts on port 8080).
 
-Run ProcessingApplication (Starts on port 8082).
+* Run ProcessingApplication (Starts on port 8082).
 
 ---
 
@@ -65,14 +65,16 @@ Body (JSON):
 
 Expected Result:
 
-The order is saved in the order-ms database.
+* The order is saved in the order-ms database.
 
-An event is dispatched to RabbitMQ via order.exchange.
+* An event is dispatched to RabbitMQ via order.exchange.
 
-The processing microservice captures the event and prints the processed order details directly in its console log.
+* The processing microservice captures the event and prints the processed order details directly in its console log.
 
- Project Structure (Monorepo)
-Plaintext
+---
+
+### Project Structure (Monorepo)
+```Plaintext
 ├── order/                      # Producer microservice (REST API + DB)
 ├── processing/                 # Consumer microservice (Worker + DB)
 ├── docker-compose.yml          # Infrastructure setup (PostgreSQL instances & RabbitMQ)
