@@ -1,0 +1,29 @@
+services:
+  postgres-order:
+    image: postgres:16.14-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=order-ms
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata_order:/var/lib/postgresql/data
+  postgres-processing:
+    image: postgres:16.14-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=processing-ms
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata_processing:/var/lib/postgresql/data
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+volumes:
+  pgdata_order:
+  pgdata_processing:
