@@ -4,7 +4,7 @@ A robust implementation of an asynchronous, event-driven microservices architect
 
 ## Architecture & Tech Stack
 
-* **Java 25** & **Spring Boot 4.1.0** (Spring Data JPA, Spring AMQP)
+* **Java 21** & **Spring Boot 4.1.0** (Spring Data JPA, Spring AMQP)
 * **RabbitMQ** (Message Broker for asynchronous communication via Exchanges, Queues, and Bindings)
 * **PostgreSQL** (Isolated relational databases for each microservice)
 * **Docker & Docker Compose** (Local infrastructure orchestration)
